@@ -1,26 +1,27 @@
-body {
-
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.image {
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
 
+h1 {
+  font-size: 2rem;
+  color: var(--white);
+}
 
-  img {
+h3 {
+  font-size: 1.9rem;
+}
 
-  }
-
-  span {
-
-    display: block;
-    font: {
-      weight: 400;
-      size: 0.8rem;
-    }
-  }
+p {
+  font-size: 1.4rem;
 }

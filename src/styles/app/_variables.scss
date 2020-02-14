@@ -1,0 +1,8 @@
+:root {
+  --white: #ffffff;
+  --black: black;
+}
+
+@mixin shadow {
+  box-shadow: rgba(22, 29, 51, 0.145) 0px 0px 34px 0px;
+}
