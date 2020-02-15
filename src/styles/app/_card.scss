@@ -30,15 +30,23 @@
     z-index: 20;
     top: 0;
     left: 0;
+    opacity: 0;
   }
 }
 
+.card-img-container:hover > .card-technologies {
+  opacity: 1;
+}
+
 .card-technologies {
-  background: linear-gradient(
-    90deg,
-    rgba(6, 150, 255, 1) 25%,
-    rgba(78, 249, 254, 1) 100%
-  );
+  // background: linear-gradient(
+  //   135deg,
+  //   rgba(6, 150, 255, 1) 25%,
+  //   rgba(78, 249, 254, 1) 100%
+  // );
+
+  box-shadow: inset -5px -9px 28px 0px rgba(0, 0, 0, 0.58);
+  transition: all 0.5s;
 }
 
 .card-img {
