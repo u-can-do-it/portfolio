@@ -1,6 +1,10 @@
 :root {
   --white: #ffffff;
   --black: black;
+  --primary: #21aefc;
+  --size-sm: 0.5rem;
+  --size-md: 1rem;
+  --size-bg: 2rem;
 }
 
 @mixin shadow {

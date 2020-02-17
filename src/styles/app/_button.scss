@@ -1,0 +1,26 @@
+.btn {
+  color: var(--black);
+
+  &.btn--underlined {
+    background-image: linear-gradient(
+      transparent 0%,
+      transparent calc(50% - 9px),
+      rgba(6, 150, 255, 0.35) calc(50% - 9px),
+      rgba(78, 249, 254, 0.35) 100%
+    );
+    background-size: 100% 200%;
+    background-position: 0 0;
+    transition: background-position 0.2s ease-in-out;
+
+    &:hover {
+      background-image: linear-gradient(
+        transparent 0%,
+        transparent calc(50% - 9px),
+        rgba(6, 150, 255, 1) calc(50% - 9px),
+        rgba(78, 249, 254, 1) 100%
+      );
+      background-position: 0 100%;
+      background-size: 100% 200%;
+    }
+  }
+}

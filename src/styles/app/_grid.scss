@@ -3,3 +3,9 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
