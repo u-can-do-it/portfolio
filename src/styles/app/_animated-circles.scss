@@ -1,51 +1,44 @@
-// $c-1-scale: 0.7;
-// $c-2-scale: 0.4;
-// $c-3-scale: 2;
-// $c-4-scale: 1;
-
-// @mixin a-mixin($name, $from, $to) {
-//   @keyframes #{$name} {
-//     0% {
-//       transform: translate3d($from, 0, 0);
-//       opacity: 0;
-//     }
-//     100% {
-//       transform: translate3d($to, 0, 0);
-//       opacity: 1;
-//     }
-//   }
-// }
-
-// @include animation-mixin(slide-1, 0, 100%);
-// @include animation-mixin(slide-2, 0, 200%);
-
 .animated-circles {
 }
 
 .circle {
   width: 100px;
-  position: absolute;
+
   transition: all 1s;
-  animation: a-breathing 8s infinite forwards;
+  animation: a-breathing 10s infinite forwards;
 
   &--1 {
-    top: 40px;
-    left: 40px;
-    transform: scale(0.5) translate(0, 0);
+    transform: scale(0.5);
   }
   &--2 {
-    top: 30px;
-    right: -45px;
     transform: scale(0.5);
   }
   &--3 {
-    left: 0;
-    bottom: 0;
-    transform: scale(1) translate(0, 0);
+    transform: scale(1);
   }
   &--4 {
-    right: 50px;
-    bottom: 0;
-    transform: translate(0, 50%);
+  }
+}
+
+.circle-box {
+  position: absolute;
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-out;
+
+  &--1 {
+    top: -3%;
+    left: 10%;
+  }
+  &--2 {
+    top: 6%;
+    left: 90%;
+  }
+  &--3 {
+    top: 80%;
+    left: -3%;
+  }
+  &--4 {
+    top: 90%;
+    left: 75%;
   }
 }
