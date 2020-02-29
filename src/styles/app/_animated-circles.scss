@@ -5,16 +5,19 @@
   width: 100px;
 
   transition: all 1s;
-  animation: a-breathing 10s infinite forwards;
+  animation: a-move 10s infinite forwards;
+  width: 10vh;
+  height: auto;
 
   &--1 {
-    transform: scale(0.5);
+    animation-delay: 1s;
   }
   &--2 {
-    transform: scale(0.5);
+    animation-delay: 0.3s;
   }
   &--3 {
-    transform: scale(1);
+    width: 14vh;
+    animation-delay: 0.5s;
   }
   &--4 {
   }
@@ -23,7 +26,7 @@
 .circle-box {
   position: absolute;
   transform-origin: 0% 0%;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-in-out;
 
   &--1 {
     top: -3%;

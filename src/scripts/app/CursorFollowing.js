@@ -1,31 +1,28 @@
 class FollowCursor {
-  constructor(elements, window) {
+  constructor(elements, window, delay = 30) {
     this.elements = elements;
     this.window = window;
-    this.delay = 20;
+    this.delay = delay;
     this.delayClock = 0;
-    this.initialElementsPosition = [...this.elements].map(el => {
-      const { top, left } = el.getBoundingClientRect();
-      return [left, top];
-    });
+    this.setMoveEvent();
+  }
 
+  setMoveEvent() {
     this.window.addEventListener("mousemove", event => {
       if (this.delayClock < this.delay) {
         this.delayClock++;
         return;
       }
       this.delayClock = 0;
-      this.elements.forEach((el, index) => {
-        this.move(el, this.initialElementsPosition[index], event);
+      this.elements.forEach(el => {
+        this.move(el, event);
       });
     });
   }
 
-  move(element, initialPosition, event) {
-    const [top, left] = initialPosition;
-
-    const transitionX = (event.clientX - left) / 10;
-    const transitionY = (event.clientY - top) / 10;
+  move(element, event) {
+    const transitionX = Math.floor(event.clientX / 10);
+    const transitionY = Math.floor(event.clientY / 10);
 
     element.setAttribute(
       "style",

@@ -13,3 +13,39 @@
     transform: scale(1);
   }
 }
+
+@keyframes a-move {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(20%, -50%) scale(1.25);
+  }
+  40% {
+    transform: translate(10%, -30%) scale(1.5);
+  }
+  60% {
+    transform: translate(0, 10%) scale(1.55);
+  }
+  80% {
+    transform: translate(30%, 22%) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes from-bottom {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.show-from-bottom {
+  overflow: hidden;
+
+  & > * {
+    animation: from-bottom 2.5s forwards ease-in-out;
+    transform: translateY(100%);
+  }
+}

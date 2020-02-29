@@ -1,36 +1,3 @@
-.text-center {
-  text-align: center;
-}
-
-.v-center {
-  display: flex;
-  align-items: center;
-}
-
-.mg-lt-sm {
-  margin-left: var(--size-sm);
-}
-
-.mg-bt-sm {
-  margin-bottom: var(--size-sm);
-}
-
-.mg-bt-md {
-  margin-bottom: var(--size-md);
-}
-
-.pd-md {
-  padding: var(--size-md);
-}
-
-.pd-sm {
-  padding: var(--size-sm);
-}
-
-.pd-bg {
-  padding: var(--size-bg);
-}
-
-.child-pd-md > * {
-  padding: 0 var(--size-md);
+.color-alt {
+  color: var(--t-alt);
 }

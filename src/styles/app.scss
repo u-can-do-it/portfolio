@@ -1,5 +1,5 @@
 // App specific
-
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "app/variables";
 @import "app/animations";
 
@@ -16,3 +16,4 @@
 @import "app/section";
 @import "app/utils";
 @import "app/tooltip";
+@import "app/scroll-marker";

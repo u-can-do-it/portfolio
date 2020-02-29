@@ -1,0 +1,14 @@
+.section {
+  &__header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .section__header {
+    text-align: unset;
+  }
+}
