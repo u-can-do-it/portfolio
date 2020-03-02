@@ -1,0 +1,4 @@
+.contact {
+  clip-path: polygon(50% 70px, 100% 0, 100% 100%, 0 100%, 0 0);
+  @include gradient;
+}

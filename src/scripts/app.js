@@ -1,6 +1,6 @@
 import FollowCursor from "./app/CursorFollowing";
 
-const circles = document.querySelectorAll(".circle-box ");
-const header = document.querySelector("#welcome");
+const text = document.querySelectorAll(".hero__text");
+const header = document.querySelector("#home");
 
-const a = new FollowCursor(circles, header);
+const a = new FollowCursor(text, header);

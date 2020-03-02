@@ -1,0 +1,15 @@
+@mixin gradient {
+  background-image: linear-gradient(
+    rgba(6, 150, 255, 1),
+    rgba(78, 249, 254, 1)
+  );
+}
+
+@mixin text-gradient {
+  background: -webkit-linear-gradient(
+    rgba(6, 150, 255, 1),
+    rgba(78, 249, 254, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

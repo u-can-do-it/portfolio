@@ -6,9 +6,3 @@
     text-align: center;
   }
 }
-
-@include media-breakpoint-up(md) {
-  .section__header {
-    text-align: unset;
-  }
-}
