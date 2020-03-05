@@ -12,6 +12,13 @@
     />
 
     <title>My Portfolio</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_zgrAmoTgIVfso7NZc6uZN");
+       })();
+    </script>
   </head>
 
   <body>
@@ -39,6 +46,7 @@
             <div class="col">
               <div class="section__header">
                 <h2>Projects</h2>
+                <hr class="section-underline">
               </div>
             </div>
           </div>
@@ -57,10 +65,10 @@
                     <nav>
                       <ul class="card__links">
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
                         </li>
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
                         </li>
                       </ul>
                     </nav>
@@ -81,33 +89,10 @@
                     <nav>
                       <ul class="card__links">
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
                         </li>
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </article>
-            </li>            
-            <li class="col col-auto mb-5">
-                <article class="card">
-                  <div class="card-img__container">
-                    <img src="/images/doist.png" alt="">
-                  </div>
-                  <div class="card__desc">
-                    <h4>DOIST</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut accusantium necessitatibus. Est excepturi pariatur ab eius consectetur magni animi eligendi autem quos!
-                    </p>
-                    <nav>
-                      <ul class="card__links">
-                        <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
-                        </li>
-                        <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
                         </li>
                       </ul>
                     </nav>
@@ -127,10 +112,33 @@
                     <nav>
                       <ul class="card__links">
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
                         </li>
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </article>
+            </li>            
+            <li class="col col-auto mb-5">
+                <article class="card">
+                  <div class="card-img__container">
+                    <img src="/images/doist.png" alt="">
+                  </div>
+                  <div class="card__desc">
+                    <h4>DOIST</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut accusantium necessitatibus. Est excepturi pariatur ab eius consectetur magni animi eligendi autem quos!
+                    </p>
+                    <nav>
+                      <ul class="card__links">
+                        <li>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
+                        </li>
+                        <li>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
                         </li>
                       </ul>
                     </nav>
@@ -151,10 +159,10 @@
                     <nav>
                       <ul class="card__links">
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://u-can-do-it.github.io/doist/">Live</a>
                         </li>
                         <li>
-                          <a class="btn btn--underlined" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
+                          <a class="btn btn--animated" rel="noopener noreferrer" target="_blank" href="https://github.com/u-can-do-it/doist">Code</a>
                         </li>
                       </ul>
                     </nav>
@@ -167,9 +175,18 @@
       </section>
 
       <section class="skills" id="skills">
-        <div class="section__header">
-          <h3>Skills</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="section__header">
+                <h3>Skills</h3>
+                <hr class="section-underline">
+              </div>
+            </div>
+          </div>
+
         </div>
+ 
       <div class="container">
           <ul>
           <li class="row row-cols-1 row-cols-md-2">
@@ -256,33 +273,51 @@
 
 
       <section class="contact container-fluid">
-        <div class="section__header">
-          <h3>contact</h3>
-        </div>
         <div class="container">
-          <form>
-            <div class="">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <div class="row">
+            <div class="col">
+              <div class="section__header">
+                <h3 class="color--alt">contact</h3>
+               <hr class="section-underline section-underline--white">
+              </div>
+            </div>
+          </div>
+
+          <form class="form-contact container pb-5 target=" id="contact-form">
+         
+            <div class="form-group">
+              <label class="color--alt" for="name">Name</label>
+              <input type="name" class="form-input" id="name"  aria-describedby="emailHelp" placeholder="Tommy Lee"required>
  
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <label class="color--alt" for="email">Email</label>
+              <input type="email" name="email" class="form-input" id="email" placeholder="tommy-lee-jones@gmail.com" required>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
 
+
+
+          <div class="form-group">
+            <label class="color--alt" for="message">Message</label>
+            <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="Hello World" required></textarea>
+          </div>
+
+          <button type="submit" class="btn color--alt" id="contact-submit">Submit</button>
+        </form>
+        </div>
       </section>
 
       <section class="section about">
         <div class="section-header"></div>
       </section>
+      <footer class="page-footer p-3">
+        <div class="container text-center color--alt">
+          <p class="mb-0">LO &#169; <span class="year">2020</span></p>
+        </div>
+
+      </footer>
     </main>
+
+
   </body>
 </html>

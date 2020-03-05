@@ -1,26 +1,20 @@
 .btn {
-  color: var(--black);
+  border: 1px solid $c-grad-1;
 
-  &.btn--underlined {
-    background-image: linear-gradient(
-      transparent 0%,
-      transparent calc(50% - 9px),
-      rgba(6, 150, 255, 0.35) calc(50% - 9px),
-      rgba(78, 249, 254, 0.35) 100%
-    );
-    background-size: 100% 200%;
-    background-position: 0 0;
-    transition: background-position 0.2s ease-in-out;
+  &.btn--animated {
+    color: var(--t-alt);
+
+    text-transform: uppercase;
+    background: $c-grad-2;
+    border: 1px solid $c-grad-1;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
 
     &:hover {
-      background-image: linear-gradient(
-        transparent 0%,
-        transparent calc(50% - 9px),
-        rgba(6, 150, 255, 1) calc(50% - 9px),
-        rgba(78, 249, 254, 1) 100%
-      );
-      background-position: 0 100%;
-      background-size: 100% 200%;
+      border-radius: 20px;
+      border-color: $c-grad-comp;
+      transition: all 0.3s ease 0s;
+      @include shadow;
     }
   }
 }

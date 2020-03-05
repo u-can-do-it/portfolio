@@ -1,8 +1,19 @@
 .section {
   &__header {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+.section-underline {
+  width: 50%;
+  min-width: 220px;
+  margin: 0 auto;
+  background-color: $c-grad-2;
+
+  &.section-underline--white {
+    background-color: var(--t-alt);
   }
 }

@@ -1,12 +1,10 @@
 :root {
   --t-alt: #ffffff;
   --t-default: black;
-  --primary: #21aefc;
-  --size-sm: 0.5rem;
-  --size-md: 1rem;
-  --size-bg: 2rem;
+  --primary: #142842;
+  --dark: #1e242c;
 }
 
-@mixin shadow {
-  box-shadow: rgba(22, 29, 51, 0.145) 0px 0px 34px 0px;
-}
+$c-grad-1: #142842;
+$c-grad-2: #1d1a36;
+$c-grad-comp: #422614;

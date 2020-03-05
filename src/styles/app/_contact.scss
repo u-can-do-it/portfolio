@@ -1,4 +1,29 @@
 .contact {
-  clip-path: polygon(50% 70px, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
   @include gradient;
+  padding-top: 180px;
+}
+
+@include media-breakpoint-up(sm) {
+  .contact {
+    padding-top: 200px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .contact {
+    padding-top: 220px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .contact {
+    padding-top: 225px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .contact {
+    padding-top: 230px;
+  }
 }
