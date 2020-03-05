@@ -1,6 +1,6 @@
 class InputValidation {
-  constructor(input) {
-    this.input = input;
+  constructor(value) {
+    this.value = value;
     this.isValid = null;
     this.errMessage = [];
   }
@@ -16,15 +16,15 @@ class InputValidation {
   }
 
   minLength(minLength) {
-    const isValid = this.input.length >= minLength;
-    const errMessage = `Minimum ${minLength} characters`;
+    const isValid = this.value.length >= minLength;
+    const errMessage = `Minimum ${minLength} characters.`;
     return this.validate(isValid, errMessage);
   }
 
   emali() {
     const emailRegExp = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    const isValid = emailRegExp.test(this.input);
-    const errMessage = "It is not a valid email";
+    const isValid = emailRegExp.test(this.value);
+    const errMessage = "It is not a valid email.";
     return this.validate(isValid, errMessage);
   }
 }

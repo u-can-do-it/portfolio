@@ -26,3 +26,14 @@
   & textarea {
   }
 }
+
+.form-feedback {
+  height: 0.5rem;
+  opacity: 0;
+  display: block;
+  transition: all 0.2s;
+
+  &.active {
+    opacity: 1;
+  }
+}
