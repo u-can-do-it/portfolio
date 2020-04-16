@@ -1,0 +1,23 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "app/styles/css/normalize.css";
+
+@import "app/styles/scss/variables";
+@import "app/styles/scss/mixins";
+@import "app/styles/scss/animations";
+
+@import "app/styles/scss/base";
+@import "app/styles/scss/button";
+@import "app/styles/scss/card";
+@import "app/styles/scss/footer";
+@import "app/styles/scss/grid";
+@import "app/styles/scss/header";
+
+@import "app/styles/scss/nav";
+@import "app/styles/scss/projects";
+@import "app/styles/scss/section";
+@import "app/styles/scss/utils";
+@import "app/styles/scss/tooltip";
+@import "app/styles/scss/scroll-marker";
+@import "app/styles/scss/contact";
+@import "app/styles/scss/form";
+@import "app/styles/scss/preloader";

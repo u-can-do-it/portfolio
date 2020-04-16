@@ -1,0 +1,16 @@
+@mixin gradient {
+  background-image: linear-gradient(#142842, #1d1a36);
+}
+
+@mixin text-gradient {
+  background: -webkit-linear-gradient(#142842, #1d1a36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin shadow {
+  box-shadow: rgba(22, 29, 51, 0.145) 0px 0px 34px 0px;
+}
+@mixin shadow-dark {
+  box-shadow: rgba(22, 29, 51, 0.245) 0px 0px 34px 0px;
+}

@@ -1,0 +1,30 @@
+.scroll-marker {
+  position: relative;
+  z-index: 2;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.scroll-marker__holder {
+  animation: markers-slide-in 1s infinite linear;
+  & > div {
+    position: relative;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border: solid 0.3rem var(--primary);
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    margin: 5px;
+  }
+}
+
+@keyframes markers-slide-in {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}

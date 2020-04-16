@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%; // fix 100vh bug on mobile
+  font-family: "Nunito Sans", sans-serif;
+}

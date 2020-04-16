@@ -1,0 +1,51 @@
+@function sum($a, $b) {
+  @return $a + $b;
+}
+
+@keyframes a-breathing {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(2.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes a-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(20%, -50%);
+  }
+  40% {
+    transform: translate(10%, -30%);
+  }
+  60% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(30%, 22%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes from-bottom {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.show-from-bottom {
+  overflow: hidden;
+
+  & > * {
+    animation: from-bottom 2.5s forwards ease-in-out;
+    transform: translateY(100%);
+  }
+}

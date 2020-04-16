@@ -1,0 +1,60 @@
+.card {
+  border-radius: 13px;
+  overflow: hidden;
+  max-width: 280px;
+  height: 432px;
+  width: 100%;
+  transition: all 0.4s;
+  @include shadow;
+
+  &:hover {
+    @include shadow-dark;
+  }
+  & h4 {
+    text-transform: uppercase;
+  }
+
+  &-img__container {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  &__desc {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    align-content: flex-start;
+
+    & > p {
+      overflow: hidden;
+      flex-grow: 1;
+    }
+
+    & > nav {
+      align-self: flex-end;
+      width: 100%;
+    }
+  }
+
+  &__links {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+
+    & > * {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.card.invisible {
+  opacity: 0;
+}
+
+.card.active {
+  opacity: 1;
+}

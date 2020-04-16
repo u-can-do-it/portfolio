@@ -1,0 +1,39 @@
+.form-contact {
+  max-width: 800px;
+  width: 100%;
+}
+
+.form-input {
+  background: var(--dark);
+  // background-color: #422614;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  resize: none;
+
+  &:active,
+  &:focus {
+    border: 1px solid white;
+  }
+
+  & textarea {
+  }
+}
+
+.form-feedback {
+  height: 0.5rem;
+  opacity: 0;
+  display: block;
+  transition: all 0.2s;
+
+  &.active {
+    opacity: 1;
+  }
+}
