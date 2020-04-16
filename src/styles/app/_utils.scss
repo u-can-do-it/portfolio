@@ -3,6 +3,27 @@
 }
 
 .icon-md {
-  width: 64px;
+  width: 48px;
   height: auto;
+}
+
+.icon-box {
+  @include media-breakpoint-up(md) {
+    width: 125px;
+  }
+}
+
+.box-shadow {
+  @include shadow;
+  border-radius: 15px;
+  transition: all 0.2s;
+
+  &:hover {
+    @include shadow-dark;
+  }
+}
+
+.lock-scroll {
+  height: 100%;
+  overflow: hidden;
 }

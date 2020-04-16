@@ -1,3 +1,5 @@
+import { throttle } from "./utils";
+
 class FollowCursor {
   constructor(elements, window) {
     this.elements = elements;
@@ -7,10 +9,13 @@ class FollowCursor {
   }
 
   setMoveEvent() {
-    this.window.addEventListener("mousemove", event => {
-      this.elements.forEach(el => {
-        this.move(el, event);
-      });
+    this.window.addEventListener("mousemove", (event) => {
+      throttle(
+        this.elements.forEach((el) => {
+          this.move(el, event);
+        }),
+        50
+      );
     });
   }
 

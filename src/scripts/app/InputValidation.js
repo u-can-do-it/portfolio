@@ -6,10 +6,10 @@ class InputValidation {
   }
 
   validate(isValid, errMessage) {
-    if ((this.isValid === null || this.isValid) && isValid === true) {
-      this.isValid = isValid;
-    } else if (isValid === false) {
-      this.isValid = isValid;
+    if ((this.isValid === null || this.isValid) && isValid) {
+      this.isValid = true;
+    } else if (!isValid) {
+      this.isValid = false;
       this.errMessage.push(errMessage);
     }
     return this;
@@ -24,7 +24,7 @@ class InputValidation {
   emali() {
     const emailRegExp = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
     const isValid = emailRegExp.test(this.value);
-    const errMessage = "It is not a valid email.";
+    const errMessage = "This is not valid email.";
     return this.validate(isValid, errMessage);
   }
 }

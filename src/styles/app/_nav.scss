@@ -1,0 +1,63 @@
+.nav {
+  transition: all 0.3s;
+
+  &__backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    @include gradient;
+    z-index: 100;
+  }
+
+  &.active > .nav__backdrop {
+    transform: translateY(100%);
+
+    & .nav__item {
+      transform: translateY(5rem);
+      opacity: 1;
+      transition-duration: 0.3s;
+    }
+  }
+  @for $i from 1 through 4 {
+    .nav__item:nth-last-child(#{$i}) {
+      transition-delay: #{$i * 0.1 + 0.2}s;
+    }
+  }
+
+  &__item {
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-duration: 0;
+    transition-property: all;
+  }
+
+  &__link {
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1.2rem;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transform: scaleX(0);
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}

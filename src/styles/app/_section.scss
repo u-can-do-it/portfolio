@@ -12,8 +12,17 @@
   min-width: 220px;
   margin: 0 auto;
   background-color: $c-grad-2;
+  transition: all 1s;
 
   &.section-underline--white {
     background-color: var(--t-alt);
+  }
+
+  &.hidden {
+    transform: scaleX(0);
+  }
+
+  &.active {
+    transform: scaleX(1);
   }
 }

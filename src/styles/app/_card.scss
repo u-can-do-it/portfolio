@@ -4,7 +4,15 @@
   max-width: 280px;
   height: 432px;
   width: 100%;
+  transition: all 0.4s;
   @include shadow;
+
+  &:hover {
+    @include shadow-dark;
+  }
+  & h4 {
+    text-transform: uppercase;
+  }
 
   &-img__container {
     width: 100%;
@@ -16,7 +24,6 @@
 
   &__desc {
     padding: 0.5rem;
-    text-align: justify;
     display: flex;
     flex-direction: column;
     height: 250px;
@@ -42,4 +49,12 @@
       margin: 0 1rem;
     }
   }
+}
+
+.card.invisible {
+  opacity: 0;
+}
+
+.card.active {
+  opacity: 1;
 }
