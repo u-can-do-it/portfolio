@@ -11,6 +11,10 @@
   "keywords": [],
   "author": "Łukasz Orzechowski",
   "license": "ISC",
+  "browserslist": [
+    "last 1 major version",
+    "> 1%"
+  ],
   "devDependencies": {
     "bootstrap": "^4.4.1",
     "css-loader": "^2.1.0",
