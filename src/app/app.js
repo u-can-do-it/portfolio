@@ -150,5 +150,3 @@ submitBtn.addEventListener("click", (e) => {
     }, delay);
   }
 });
-
-console.log("test");
