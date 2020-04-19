@@ -24,7 +24,7 @@ class InputValidation {
   emali() {
     const emailRegExp = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
     const isValid = emailRegExp.test(this.value);
-    const errMessage = "This is not valid email.";
+    const errMessage = "Invalid email.";
     return this.validate(isValid, errMessage);
   }
 }
