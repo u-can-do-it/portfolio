@@ -123,6 +123,12 @@ submitBtn.addEventListener("click", (e) => {
     },
   };
 
+  // Prevent spam
+  if (messageCounter >= 2) {
+    submitBtn.innerHTML = "Try again later";
+    return;
+  }
+
   fetch("https://api.emailjs.com/api/v1.0/email/send", {
     method: "POST",
     headers: {
@@ -131,7 +137,7 @@ submitBtn.addEventListener("click", (e) => {
     body: JSON.stringify(data),
   })
     .then((resp) => {
-      if (!resp.ok || messageCounter > 1) throw new Error("Try again later");
+      if (!resp.ok) throw new Error("Try again later");
       submitBtn.innerHTML = "Message sent";
       messageCounter++;
     })
