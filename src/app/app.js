@@ -67,6 +67,7 @@ const message = document.querySelector("#message");
 const messageFeedback = document.querySelector("#message-feedback");
 const submitBtn = document.querySelector("#contact-submit");
 const form = document.querySelector("#contact-form");
+let messageCounter = 0;
 
 // submit form only on button click
 submitBtn.addEventListener("click", (e) => {
@@ -130,8 +131,9 @@ submitBtn.addEventListener("click", (e) => {
     body: JSON.stringify(data),
   })
     .then((resp) => {
-      if (!resp.ok) throw new Error("Try again later");
+      if (!resp.ok || messageCounter > 1) throw new Error("Try again later");
       submitBtn.innerHTML = "Message sent";
+      messageCounter++;
     })
     .catch((error) => {
       submitBtn.innerHTML = error.message;
